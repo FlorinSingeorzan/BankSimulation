@@ -53,20 +53,6 @@ public class Bank implements Observer,BankProc,Serializable{
     }
 
     @Override
-    public void removeAccount(String id,int type) {
-        assert isInHash(accountOf(id,type));
-        for(Person p:bankInfo.keySet()){
-            for(Account a:bankInfo.get(p))
-            if(a.getHolderIdentifier().equals(id) && a.getType()==type){
-                    bankInfo.get(p).remove(a);
-            }
-        }
-        assert isNotInHash(accountOf(id,type));
-
-
-    }
-
-    @Override
     public void editPerson(Person person) {
         assert isInHash(person.getIdentifier());
         for(Person p:bankInfo.keySet()){
@@ -79,6 +65,20 @@ public class Bank implements Observer,BankProc,Serializable{
             }
         }
         assert  isInHash(person.getIdentifier());
+    }
+
+    @Override
+    public void removeAccount(String id,int type) {
+        assert isInHash(accountOf(id,type));
+        for(Person p:bankInfo.keySet()){
+            for(Account a:bankInfo.get(p))
+                if(a.getHolderIdentifier().equals(id) && a.getType()==type){
+                    bankInfo.get(p).remove(a);
+                }
+        }
+        assert isNotInHash(accountOf(id,type));
+
+
     }
 
     @Override

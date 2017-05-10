@@ -12,8 +12,8 @@ public class BankJUnit extends TestCase {
     public void testAddMoney(){         //incepe cu test
         person.setName("Alexandri");
         person.setAge(23);
-        person.setEmail("alex@gmail.com");
         person.setPhone("078232922");
+        person.setEmail("alex@gmail.com");
         person.setAddress("Cluj");
         person.setIdentifier("1");
         account.setHolderIdentifier("1");

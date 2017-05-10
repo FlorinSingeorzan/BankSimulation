@@ -25,13 +25,13 @@ public class SavingAccount extends Account {
     }
 
     @Override
-    public int getSold() {
-        return super.getSold();
+    public void setType(int type) {
+        super.setType(type);
     }
 
     @Override
-    public void setType(int type) {
-        super.setType(type);
+    public int getSold() {
+        return super.getSold();
     }
 
     @Override

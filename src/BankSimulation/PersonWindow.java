@@ -134,11 +134,11 @@ public class PersonWindow extends JFrame {
         deletePerson.addActionListener(actionListener);
     }
 
-    int selectedRow(){return personsTable.getSelectedRow();}
-
-     void attachEditPerson(ActionListener actionListener){
+    void attachEditPerson(ActionListener actionListener){
         editPerson.addActionListener(actionListener);
     }
+
+    int selectedRow(){return personsTable.getSelectedRow();}
 
      DefaultTableModel getPersonModel() {
         return personModel;
