@@ -147,8 +147,8 @@ import java.util.TreeSet;
      static void withdrawSold(GraphicWindow g, Bank b) {
         g.withdrawSold((ActionEvent e) -> {
             if (!g.getId().equals("")) {
-                String sumWithdraw = g.getSoldToWithdraw();
                 String id = g.getId();
+                String sumWithdraw = g.getSoldToWithdraw();
                 String type = g.getAccountSelectedType();
                 int j, i,k;
                 String interest;

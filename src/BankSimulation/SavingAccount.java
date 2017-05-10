@@ -2,7 +2,7 @@ package BankSimulation;
 public class SavingAccount extends Account {
 
     private final static  long serialVersionUID=1238;
-    private int interestRate=10;
+    private int interestRate=5;
 
 
     SavingAccount(){

@@ -15,15 +15,15 @@ public class SpendingAccount extends Account {
         return super.getHolderIdentifier();
     }
 
+    public int getType() {
+        return super.getType();
+    }
+
     @Override
     public void setSold(int sold) {
         super.setSold(sold);
         setChanged();
         notifyObservers(this);
-    }
-
-    public int getType() {
-        return super.getType();
     }
 
     @Override

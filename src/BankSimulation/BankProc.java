@@ -12,8 +12,8 @@ public interface BankProc {
     boolean isInHash(Account a);
     boolean isNotInHash(String id);
     boolean isNotInHash(Account a);
-    boolean isPositive();
     boolean isAccountPositive(Account a);
+    boolean isPositive();
     Account accountOf(String s,int t);
 
 

@@ -67,8 +67,8 @@ import java.awt.event.ActionListener;
          this.add(accountPanel);
          this.add(tablePanel);
          usePanels();
-         addButtons();
          addContainers();
+         addButtons();
      }
 
      private void usePanels() {

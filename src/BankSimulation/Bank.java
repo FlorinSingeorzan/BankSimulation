@@ -74,8 +74,8 @@ public class Bank implements Observer,BankProc,Serializable{
                 p.setEmail(person.getEmail());
                 p.setPhone(person.getPhone());
                 p.setAddress(person.getAddress());
-                p.setName(person.getName());
                 p.setAge(person.getAge());
+                p.setName(person.getName());
             }
         }
         assert  isInHash(person.getIdentifier());

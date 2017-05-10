@@ -34,12 +34,12 @@ public class Account extends java.util.Observable implements Comparable,Serializ
         return type;
     }
 
-    public void setType(int type) {
-        this.type = type;
-    }
-
     @Override
     public int compareTo(Object o) {
         return ((Account)o).getType()-this.getType();
+    }
+
+    public void setType(int type) {
+        this.type = type;
     }
 }
