@@ -17,13 +17,13 @@ public class Account extends java.util.Observable implements Comparable,Serializ
         return sold;
     }
 
-    public String getHolderIdentifier() {
-        return holderIdentifier;
-    }
-
     public void setSold(int sold) {
         this.sold = sold;
 
+    }
+
+    public String getHolderIdentifier() {
+        return holderIdentifier;
     }
 
     public void setHolderIdentifier(String holderIdentifier) {

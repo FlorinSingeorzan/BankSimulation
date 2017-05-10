@@ -71,20 +71,20 @@ import java.awt.event.ActionListener;
          addContainers();
      }
 
+     private void addButtons() {
+         addAccount.setBounds(80, 130, 120, 20);
+         deleteAccount.setBounds(280, 130, 120, 20);
+         accountPanel.add(addAccount);
+         accountPanel.add(deleteAccount);
+     }
+
+
      private void usePanels() {
          accountPanel.setLayout(null);
          accountPanel.setBounds(0, 400, 700, 200);
          tablePanel.setBounds(0, 0, 700, 400);
          accountPanel.setBackground(new Color(215, 215, 255));
 
-     }
-
-
-     private void addButtons() {
-         addAccount.setBounds(80, 130, 120, 20);
-         deleteAccount.setBounds(280, 130, 120, 20);
-         accountPanel.add(addAccount);
-         accountPanel.add(deleteAccount);
      }
 
      private void addContainers() {

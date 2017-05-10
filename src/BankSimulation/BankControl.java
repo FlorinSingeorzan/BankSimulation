@@ -13,8 +13,8 @@ public class BankControl {
         BankActions.getAccount(view, bank);
         BankActions.deleteAccount(view, bank);
         BankActions.addNewPerson(view, bank);
-        BankActions.deletePerson(view, bank);
         BankActions.editPerson(view, bank);
+        BankActions.deletePerson(view, bank);
         BankActions.addSold(view, bank);
         BankActions.withdrawSold(view, bank);
         BankActions.autoFill(view);

@@ -9,8 +9,8 @@ public interface BankProc {
     int addMoney(String id, int j, int i);
     int takeMoney(String id, int j, int i);
     boolean isInHash(String id);
-    boolean isNotInHash(String id);
     boolean isInHash(Account a);
+    boolean isNotInHash(String id);
     boolean isNotInHash(Account a);
     boolean isAccountPositive(Account a);
     boolean isPositive();

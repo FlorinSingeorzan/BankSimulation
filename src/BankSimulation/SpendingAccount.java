@@ -10,13 +10,13 @@ public class SpendingAccount extends Account {
     public int getSold() {
         return super.getSold();
     }
-    public int getType() {
-        return super.getType();
-    }
-
     @Override
     public String getHolderIdentifier() {
         return super.getHolderIdentifier();
+    }
+
+    public int getType() {
+        return super.getType();
     }
 
     @Override
